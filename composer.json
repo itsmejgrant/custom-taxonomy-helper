@@ -1,0 +1,21 @@
+{
+	"name": "itsmejgrant/taxonomy-helper",
+	"description": "A tiny package to abstract away the pain of creating custom taxonomies in WordPress.",
+	"type": "library",
+	"require": {
+		"php": ">=7.4"
+	},
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Itsmejgrant\\TaxonomyHelper\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Joe Grant",
+			"email": "jmgrant1995@gmail.com"
+		}
+	],
+	"minimum-stability": "dev"
+}
