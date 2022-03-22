@@ -80,18 +80,19 @@ class Taxonomy
     protected function __set_default_labels(): void
     {
         $theme = get_current_theme();
+        $singular_name = rtrim($this->name, "s");
         $this->labels = array(
             'name' => _x("$this->name", "taxonomy general name", $theme),
-            "singular_name" => _x(rtrim($this->name, "s"), "taxonomy singular name", $theme),
+            "singular_name" => _x($singular_name, "taxonomy singular name", $theme),
             "search_items" => __("Search $this->name", $theme),
             "all_items" => __("All $this->name", $theme),
-            "view_item" => __("View Genre", $theme),
-            "parent_item" => __("Parent Genre", $theme),
-            "parent_item_colon" => __("Parent Genre:", $theme),
-            "edit_item" => __("Edit Genre", $theme),
-            "update_item" => __("Update Genre", $theme),
-            "add_new_item" => __("Add New Genre", $theme),
-            "new_item_name" => __("New Genre Name", $theme),
+            "view_item" => __("View $singular_name", $theme),
+            "parent_item" => __("Parent $singular_name", $theme),
+            "parent_item_colon" => __("Parent $singular_name:", $theme),
+            "edit_item" => __("Edit $singular_name", $theme),
+            "update_item" => __("Update $singular_name", $theme),
+            "add_new_item" => __("Add New $singular_name", $theme),
+            "new_item_name" => __("New $singular_name Name", $theme),
             "not_found" => __("No $this->name Found", $theme),
             "back_to_items" => __("Back to $this->name", $theme),
             "menu_name" => __("$this->name", $theme),
