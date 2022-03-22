@@ -149,7 +149,7 @@ class Taxonomy
      */
     protected function __register_taxonomy(): void
     {
-        register_taxomony($this->name, $this->post_types, $this->args);
+        register_taxonomy($this->name, $this->post_types, $this->args);
     }
 
     /**
