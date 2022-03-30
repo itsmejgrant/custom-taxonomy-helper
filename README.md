@@ -14,7 +14,7 @@ In your terminal, in the directory where your composer.json is (usually the them
 
 Then, in your `function.php` file:
 
-`use Itsmejgrant\CustomTaxonomyHelper\Taxonomy`
+`use Itsmejgrant\TaxonomyHelper\Taxonomy`
 
 That's it, you're ready to go!
 
