@@ -20,7 +20,7 @@ class Taxonomy
      * @param array $labels
      * @param array $args
      */
-    public function __construct(string $name = '', mixed $post_types = [], array $labels = [], array $args = [])
+    public function __construct($name = '', $post_types = [], $labels = [], $args = [])
     {
         // Bind variables
         $this->name = $name;
